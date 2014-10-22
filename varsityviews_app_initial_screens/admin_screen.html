@@ -1,0 +1,127 @@
+<!-- Link to bootsrap styling -->
+<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- Link to fontawesome -->
+<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+<!-- Link to javascript for bootstrap -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<html>
+<head>
+	<title>Varsity Views GameDay Support</title>
+	<nav class="navbar navbar-inverse" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Varsity Views</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">View My Games</a></li>
+					<li><a href="#">Add New Games</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<h1 class="text-center">Add a New Varsity Views Game</h1>
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<label for="inputDate" class="col-sm-2 control-label">Date</label>
+				<div class="col-sm-10">
+					<input type="date" class="form-control" id="inputDate" placeholder="Date">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputTime" class="col-sm-2 control-label">Time</label>
+				<div class="col-sm-10">
+					<input type="time" class="form-control" id="inputTime" placeholder="Time">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="inputLocation" class="col-sm-2 control-label">Location</label>
+				<div class="col-sm-10">
+					<input type="location" class="form-control" id="inputLocation" placeholder="Location">
+					<span class="help-block"><em>If location is unknown, leave blank.</em></span>
+				</div>
+			</div>
+
+
+			<div class="form-group">
+				<label for="inputSport" class="col-sm-2 control-label">Sport</label>
+				<div class="col-sm-10">
+					<select class="form-control">
+						<option>Basketball</option>
+						<option>Football</option>
+						<option>Soccer</option>
+						<option>Volleyball</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="inputGender" class="col-sm-2 control-label">Gender</label>
+				<div class="col-sm-10">
+					<select class="form-control">
+						<option>Boys</option>
+						<option>Girls</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="inputTime" class="col-sm-2 control-label">Level</label>
+				<div class="col-sm-10">
+					<select class="form-control">
+						<option>Varsity</option>
+						<option>Junior Varsity</option>
+						<option>Sophomore</option>
+						<option>Freshman A</option>
+						<option>Freshman B</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="inputHome" class="col-sm-2 control-label">Home</label>
+				<div class="col-sm-10">
+					<input type="home" class="form-control" id="inputHome" placeholder="Home">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="inputAway" class="col-sm-2 control-label">Away</label>
+				<div class="col-sm-10">
+					<input type="away" class="form-control" id="inputAway" placeholder="Away">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> I am free to work this game. (Not required - please tell us of any new games we should be covering!)
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-default">Submit for Approval</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
